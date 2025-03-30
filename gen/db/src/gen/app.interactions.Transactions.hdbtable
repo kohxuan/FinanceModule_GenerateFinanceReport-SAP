@@ -1,0 +1,14 @@
+COLUMN TABLE app_interactions_Transactions (
+  ID NVARCHAR(36) NOT NULL,
+  createdAt TIMESTAMP,
+  createdBy NVARCHAR(255),
+  modifiedAt TIMESTAMP,
+  modifiedBy NVARCHAR(255),
+  transactionID NVARCHAR(20),
+  transactionDate SECONDDATE,
+  category NVARCHAR(50),
+  description NVARCHAR(1024),
+  amount DECIMAL(10, 2),
+  type NVARCHAR(10),
+  PRIMARY KEY(ID)
+)

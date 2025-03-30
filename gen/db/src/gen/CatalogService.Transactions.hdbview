@@ -1,0 +1,13 @@
+VIEW CatalogService_Transactions AS SELECT
+  Transactions_0.ID,
+  Transactions_0.createdAt,
+  Transactions_0.createdBy,
+  Transactions_0.modifiedAt,
+  Transactions_0.modifiedBy,
+  Transactions_0.transactionID,
+  Transactions_0.transactionDate,
+  Transactions_0.category,
+  Transactions_0.description,
+  Transactions_0.amount,
+  Transactions_0.type
+FROM app_interactions_Transactions AS Transactions_0

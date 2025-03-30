@@ -1,0 +1,18 @@
+COLUMN TABLE CatalogService_Transactions_drafts (
+  ID NVARCHAR(36) NOT NULL,
+  createdAt TIMESTAMP NULL,
+  createdBy NVARCHAR(255) NULL,
+  modifiedAt TIMESTAMP NULL,
+  modifiedBy NVARCHAR(255) NULL,
+  transactionID NVARCHAR(20) NULL,
+  transactionDate SECONDDATE NULL,
+  category NVARCHAR(50) NULL,
+  description NVARCHAR(1024) NULL,
+  amount DECIMAL(10, 2) NULL,
+  type NVARCHAR(10) NULL,
+  IsActiveEntity BOOLEAN,
+  HasActiveEntity BOOLEAN,
+  HasDraftEntity BOOLEAN,
+  DraftAdministrativeData_DraftUUID NVARCHAR(36) NOT NULL,
+  PRIMARY KEY(ID)
+)
