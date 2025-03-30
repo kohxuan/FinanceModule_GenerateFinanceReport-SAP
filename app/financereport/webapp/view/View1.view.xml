@@ -1,0 +1,139 @@
+<mvc:View
+    controllerName="financereport.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Page id="page">
+        <customHeader>
+            <Bar>
+                <contentLeft>
+                    <HBox alignItems="Center" class="sapUiSmallMarginBegin">
+                        <Image 
+                            src="images/company-mini-logo.jpeg"
+                            height="30px"
+                            class="sapUiTinyMarginEnd"/>
+                        <Title text="AK MAJU FINANCE REPORT" level="H1"/>
+                    </HBox>
+                </contentLeft>
+            </Bar>
+        </customHeader>
+        <content>
+            <VBox class="sapUiSmallMargin" width="100%">
+                <Panel headerText="Report Options" class="sapUiSmallMarginBottom">
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="4"
+                        labelSpanL="4"
+                        labelSpanM="4"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="0"
+                        emptySpanL="0"
+                        emptySpanM="0"
+                        emptySpanS="0"
+                        columnsXL="2"
+                        columnsL="2"
+                        columnsM="2"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="Report Type" />
+                            <RadioButtonGroup id="reportType" 
+                                select=".onReportTypeChange"
+                                columns="2">
+                                <RadioButton id="yearly" text="Yearly" selected="true"/>
+                                <RadioButton id="monthly" text="Monthly"/>
+                            </RadioButtonGroup>
+
+                            <Label text="Year" />
+                            <Select id="yearSelect"
+                                width="auto"
+                                items="{
+                                    path: 'viewModel>/years'
+                                }">
+                                <core:Item key="{viewModel>key}" text="{viewModel>text}"/>
+                            </Select>
+
+                            <Label text="Month" visible="{viewModel>/isMonthly}"/>
+                            <Select id="monthSelect"
+                                width="auto"
+                                visible="{viewModel>/isMonthly}"
+                                items="{
+                                    path: 'viewModel>/months'
+                                }">
+                                <core:Item key="{viewModel>key}" text="{viewModel>text}"/>
+                            </Select>
+                        </form:content>
+                    </form:SimpleForm>
+                    
+                    <HBox justifyContent="End" class="sapUiSmallMarginTop">
+                        <Button 
+                            text="Generate P&amp;L Statement"
+                            type="Emphasized"
+                            press=".onGeneratePress"
+                            class="sapUiSmallMarginEnd"/>
+                    </HBox>
+                </Panel>
+
+                <Panel headerText="Transaction List">
+                    <Table
+                        id="transactionsTable"
+                        sticky="HeaderToolbar,ColumnHeaders"
+                        items="{
+                            path: '/Transactions',
+                            sorter: {
+                                path: 'transactionID',
+                                descending: false
+                            }
+                        }">
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Transaction Records" level="H2"/>
+                            </Toolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column width="12em">
+                                <Text text="Transaction ID"/>
+                            </Column>
+                            <Column width="12em" hAlign="Begin">
+                                <Text text="Date"/>
+                            </Column>
+                            <Column minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="Category"/>
+                            </Column>
+                            <Column minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="Description"/>
+                            </Column>
+                            <Column hAlign="End">
+                                <Text text="Amount"/>
+                            </Column>
+                            <Column hAlign="Begin">
+                                <Text text="Type"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{transactionID}"/>
+                                    <Text text="{transactionDate}"/>
+                                    <Text text="{category}"/>
+                                    <Text text="{description}"/>
+                                    <ObjectNumber
+                                        number="{amount}"
+                                        emphasized="false"
+                                        state="{= ${type} === 'INCOME' ? 'Success' : 'Error'}"
+                                        class="amountText"
+                                    />
+                                    <Text text="{type}"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </Panel>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,71 @@
+transactionID,transactionDate,category,description,amount,type
+T001,2024-01-01,Sales Revenue,Product Sales,50000.00,INCOME
+T002,2024-01-02,Cost of Goods,Raw Materials,-30000.00,EXPENSE
+T003,2024-01-03,Operating Expense,Office Rent,-5000.00,EXPENSE
+T004,2024-01-05,Sales Revenue,Service Income,25000.00,INCOME
+T005,2024-01-07,Operating Expense,Utilities,-2000.00,EXPENSE
+T006,2024-01-10,Other Income,Interest Income,1000.00,INCOME
+T007,2024-01-15,Operating Expense,Salaries,-15000.00,EXPENSE
+T008,2024-01-20,Sales Revenue,Product Sales,35000.00,INCOME
+T009,2024-01-25,Marketing,Advertising,-3000.00,EXPENSE
+T010,2024-01-31,Operating Expense,Insurance,-1500.00,EXPENSE
+T011,2024-02-01,Sales Revenue,Product Sales,45000.00,INCOME
+T012,2024-02-05,Cost of Goods,Raw Materials,-28000.00,EXPENSE
+T013,2024-02-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T014,2024-02-15,Sales Revenue,Service Income,30000.00,INCOME
+T015,2024-02-20,Operating Expense,Utilities,-2200.00,EXPENSE
+T016,2024-03-01,Sales Revenue,Product Sales,55000.00,INCOME
+T017,2024-03-05,Cost of Goods,Raw Materials,-32000.00,EXPENSE
+T018,2024-03-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T019,2024-03-15,Sales Revenue,Service Income,28000.00,INCOME
+T020,2024-03-20,Marketing,Advertising,-4000.00,EXPENSE
+T021,2024-04-01,Sales Revenue,Product Sales,48000.00,INCOME
+T022,2024-04-05,Cost of Goods,Raw Materials,-29000.00,EXPENSE
+T023,2024-04-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T024,2024-04-15,Other Income,Commission,2000.00,INCOME
+T025,2024-04-20,Operating Expense,Utilities,-2300.00,EXPENSE
+T026,2024-05-01,Sales Revenue,Product Sales,52000.00,INCOME
+T027,2024-05-05,Cost of Goods,Raw Materials,-31000.00,EXPENSE
+T028,2024-05-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T029,2024-05-15,Sales Revenue,Service Income,32000.00,INCOME
+T030,2024-05-20,Marketing,Advertising,-3500.00,EXPENSE
+T031,2024-06-01,Sales Revenue,Product Sales,54000.00,INCOME
+T032,2024-06-05,Cost of Goods,Raw Materials,-33000.00,EXPENSE
+T033,2024-06-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T034,2024-06-15,Other Income,Interest Income,1500.00,INCOME
+T035,2024-06-20,Operating Expense,Utilities,-2400.00,EXPENSE
+T036,2024-07-01,Sales Revenue,Product Sales,56000.00,INCOME
+T037,2024-07-05,Cost of Goods,Raw Materials,-34000.00,EXPENSE
+T038,2024-07-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T039,2024-07-15,Sales Revenue,Service Income,33000.00,INCOME
+T040,2024-07-20,Marketing,Advertising,-4500.00,EXPENSE
+T041,2024-08-01,Sales Revenue,Product Sales,58000.00,INCOME
+T042,2024-08-05,Cost of Goods,Raw Materials,-35000.00,EXPENSE
+T043,2024-08-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T044,2024-08-15,Other Income,Commission,2500.00,INCOME
+T045,2024-08-20,Operating Expense,Utilities,-2500.00,EXPENSE
+T046,2024-09-01,Sales Revenue,Product Sales,57000.00,INCOME
+T047,2024-09-05,Cost of Goods,Raw Materials,-34500.00,EXPENSE
+T048,2024-09-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T049,2024-09-15,Sales Revenue,Service Income,34000.00,INCOME
+T050,2024-09-20,Marketing,Advertising,-4000.00,EXPENSE
+T051,2024-10-01,Sales Revenue,Product Sales,59000.00,INCOME
+T052,2024-10-05,Cost of Goods,Raw Materials,-36000.00,EXPENSE
+T053,2024-10-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T054,2024-10-15,Other Income,Interest Income,1800.00,INCOME
+T055,2024-10-20,Operating Expense,Utilities,-2600.00,EXPENSE
+T056,2024-11-01,Sales Revenue,Product Sales,60000.00,INCOME
+T057,2024-11-05,Cost of Goods,Raw Materials,-37000.00,EXPENSE
+T058,2024-11-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T059,2024-11-15,Sales Revenue,Service Income,35000.00,INCOME
+T060,2024-11-20,Marketing,Advertising,-5000.00,EXPENSE
+T061,2024-12-01,Sales Revenue,Product Sales,65000.00,INCOME
+T062,2024-12-05,Cost of Goods,Raw Materials,-39000.00,EXPENSE
+T063,2024-12-10,Operating Expense,Office Rent,-5000.00,EXPENSE
+T064,2024-12-15,Other Income,Commission,3000.00,INCOME
+T065,2024-12-20,Operating Expense,Utilities,-2700.00,EXPENSE
+T066,2025-01-01,Sales Revenue,Product Sales,62000.00,INCOME
+T067,2025-01-05,Cost of Goods,Raw Materials,-38000.00,EXPENSE
+T068,2025-01-10,Operating Expense,Office Rent,-5500.00,EXPENSE
+T069,2025-01-15,Sales Revenue,Service Income,36000.00,INCOME
+T070,2025-01-20,Marketing,Advertising,-4500.00,EXPENSE
