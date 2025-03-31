@@ -13,7 +13,7 @@ The **Finance Module - Generate Finance Report** is an application designed to g
 Watch the demo video [here](https://youtu.be/IHi75hkBXgY).
 <p align="center">
     <a href="https://youtu.be/IHi75hkBXgY">
-        <img src="https://img.youtube.com/vi/IHi75hkBXgY/0.jpg" alt="Watch the video" width="400"/>
+        <img src="https://github.com/user-attachments/assets/255bca89-3e1e-4d5c-8d18-1342f01d373f" alt="Watch the video" width="400"/>
     </a>
 </p>
 <br>
