@@ -9,6 +9,15 @@ The **Finance Module - Generate Finance Report** is an application designed to g
 - **Integration with SAP**: Utilizes OData V4 for data retrieval.
 <br>
 
+### 🎥 Demo Video
+Watch the demo video [here](https://youtu.be/IHi75hkBXgY).
+<p align="center">
+    <a href="https://youtu.be/IHi75hkBXgY">
+        <img src="https://img.youtube.com/vi/IHi75hkBXgY/0.jpg" alt="Watch the video" width="400"/>
+    </a>
+</p>
+<br>
+
 ### 🛠️ Technical Overview
 - **SAP UI5**: Frontend framework for building the user interface.
 - **OData V4**: Used for fetching transaction data.
